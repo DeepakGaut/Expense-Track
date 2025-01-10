@@ -85,8 +85,5 @@ Expense-Track
 ## Contribution
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request with your proposed changes.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 For any inquiries, please reach out to **Deepak Gautam** at [imdeepakgautam@gmail.com](mailto:imdeepakgautam@gmail.com).
