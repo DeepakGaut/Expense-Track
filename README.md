@@ -1,104 +1,75 @@
 # Expense-Track
 
-## 📌 Project Overview
-Expense-Track is a **full-stack web application** that helps users track their expenses efficiently. It provides an intuitive UI for adding, viewing, and managing expenses, along with a backend API powered by **Node.js, Express, MongoDB, and Mongoose**.
+## Overview
+Expense-Track is a web application designed to help users efficiently manage and track their expenses. With an intuitive user interface, users can add, edit, and delete expenses, categorize them, and visualize their spending habits over time.
 
-## 🛠️ Tech Stack
-- **Frontend:** React.js (if applicable)
+## Features
+- Add, edit, and delete expenses
+- Categorize expenses (e.g., Food, Travel, Bills, Entertainment, etc.)
+- View expense history
+- Graphical representation of expenses
+- User authentication and secure login
+- Responsive design for mobile and desktop
+
+## Technologies Used
+- **Frontend:** React.js, Tailwind CSS
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB, Mongoose
-- **Environment Management:** dotenv
-- **Security & API Handling:** CORS
+- **Database:** MongoDB (via MongoDB Atlas)
+- **Authentication:** JWT (JSON Web Tokens)
+- **State Management:** Context API / Redux (if applicable)
 
-## 🚀 Features
-- Add, update, delete, and view expenses.
-- Store expense data in MongoDB.
-- RESTful API architecture.
-- Secure backend with Express and Mongoose.
+## Installation
+To set up the project locally, follow these steps:
 
-## 📂 Folder Structure
-```
-Expense-Track/
-│── backend/
-│   ├── index.js          # Main server file
-│   ├── routes/
-│   │   ├── expense.js    # Expense-related API routes
-│   ├── models/
-│   │   ├── expense.js    # Mongoose schema for expenses
-│   ├── .env              # Environment variables
-│── frontend/ (if applicable)
-│── README.md             # Project documentation
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/Expense-Track.git
+   cd Expense-Track
+   ```
 
-## 🔧 Installation & Setup
-### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/DeepakGaut/Expense-Track.git
-cd Expense-Track
-```
-### **2️⃣ Setup Backend**
-```sh
-cd backend
-npm install
-```
-### **3️⃣ Setup Environment Variables**
-Create a `.env` file in the `backend/` directory:
-```
-DB=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority
-PORT=5000
-```
-Replace `<username>`, `<password>`, and `<database>` with actual values.
+2. Install dependencies for the backend and frontend:
+   ```sh
+   cd backend
+   npm install
+   cd ../frontend
+   npm install
+   ```
 
-### **4️⃣ Run the Backend**
-```sh
-npm start
-```
-If using **nodemon**, run:
-```sh
-npx nodemon index.js
-```
+3. Set up environment variables:
+   - Create a `.env` file in the `backend` directory with the following:
+     ```sh
+     MONGO_URI=your_mongodb_connection_string
+     JWT_SECRET=your_jwt_secret
+     ```
 
-## 📡 API Endpoints
-### **1️⃣ Add an Expense**
-```http
-POST /api/v1/expenses
-```
-#### Request Body:
-```json
-{
-  "title": "Grocery Shopping",
-  "amount": 100,
-  "category": "Food",
-  "date": "2024-02-26"
-}
-```
+4. Start the backend server:
+   ```sh
+   cd backend
+   npm start
+   ```
 
-### **2️⃣ Get All Expenses**
-```http
-GET /api/v1/expenses
-```
+5. Start the frontend application:
+   ```sh
+   cd frontend
+   npm start
+   ```
 
-### **3️⃣ Update an Expense**
-```http
-PUT /api/v1/expenses/:id
-```
-#### Request Body:
-```json
-{
-  "title": "Dinner",
-  "amount": 200
-}
-```
+6. Open the application in your browser at `http://localhost:3000/`.
 
-### **4️⃣ Delete an Expense**
-```http
-DELETE /api/v1/expenses/:id
-```
+## Usage
+- Sign up or log in to your account
+- Add expenses with a description, amount, and category
+- View expenses in a list or graphical format
+- Edit or delete transactions as needed
+- Securely log out when finished
 
-## 📌 Future Improvements
-- Add authentication for users.
-- Implement data visualization.
-- Build a frontend with React.js.
+## Contributing
+If you would like to contribute to this project, follow these steps:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes and commit them (`git commit -m 'Add new feature'`)
+4. Push to your fork (`git push origin feature-name`)
+5. Open a Pull Request
 
-## 🎯 Contributing
-Pull requests are welcome! Feel free to open an issue for feature requests or bug reports.
+## Author
+**Deepak Gautam**
